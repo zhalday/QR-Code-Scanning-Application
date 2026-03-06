@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "QR Code Verification",
+    "slug": "qr-code-verification",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#1a73e8"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.qrverification.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app requires camera access to scan and verify QR codes."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1a73e8"
+      },
+      "package": "com.qrverification.app",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "This app requires camera access to scan and verify QR codes."
+        }
+      ]
+    ]
+  }
+}
